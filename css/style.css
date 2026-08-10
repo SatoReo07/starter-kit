@@ -5,6 +5,14 @@ body {
   color: #333;
 }
 
+label, input, textarea, select, button {
+    cursor: pointer ;
+}
+
+button {
+    border: 0;
+}
+
 /* grid */
 .grid {
     display: flex;
@@ -31,7 +39,7 @@ body {
 section
  */
 .section {
-    padding: 30PX 15px;
+    padding: 30px 15px;
 }
 .section.section-secondary{
     background: #efeefe;
@@ -45,6 +53,10 @@ section
 .section-button {
     text-align: center;
     margin-top: 40px;
+}
+
+.button.button-submission {
+    background-color: #92d3ca;
 }
 
 /* 
@@ -94,7 +106,7 @@ feature
     color: #333;
     text-decoration: none;
     position: relative;
-    transition: background-color 0.25;
+    transition: background-color 0.25s;
 }
 .card-link:hover {
     background-color: #eee;
@@ -138,7 +150,7 @@ feature
     overflow: hidden;
 }
 
-.butoon {
+.button {
     display: inline-block;
     color: #fff;
     font-weight: bold;
@@ -151,6 +163,110 @@ feature
     transition: box-shadow .25s ;
 }
 
-.butoon:hover {
+.button:hover {
     box-shadow: 0 0 0 #bbb;
+}
+
+/* 
+.select, .input, .radio, .textarea
+*/
+.select {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+}
+.input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+}
+.radio {
+    margin: 0 10px;
+}
+.textarea {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    min-width: 500px;
+    min-height: 100px;
+}
+
+/*
+form
+*/
+/* .form {} */
+.form-table {
+    margin: 0 auto;
+}
+/* .form-table tr {} */
+.form-table th {
+    padding: 10px;
+    text-align: left;
+}
+.form-table td {
+    padding: 10px;
+
+}
+
+.form-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*
+works
+*/
+.works {
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.works > img {
+    margin: 10px 15px;
+}
+
+/*
+footer
+*/
+.footer {
+    background-color: #333;
+    color: #fff;
+}
+.footer-map {
+    margin: 0;
+    padding: 40px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-map > iframe {
+    width: 60%;
+}
+.footer-mapinfo {
+    width: 40%;
+    padding: 15px;
+}
+.footer-maplogo {
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer-maplogo > svg {
+    fill: transparent;
+    margin-right: 10px;
+}
+.footer-mapaddress {
+    font-style: normal;
+}
+.footer-mapaddress > a {
+    color: #fff;
+}
+.footer-line {
+    border-color: #444;
+}
+.footer-copy {
+    display: block;
+    text-align: center;
 }
